@@ -1,0 +1,21 @@
+{
+  "name": "mystery-word-guess",
+  "version": "1.0.0",
+  "description": "Word Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-session": "^1.15.3",
+    "express-validator": "^3.2.0",
+    "file-system": "^2.2.2",
+    "fs": "0.0.1-security",
+    "mustache-express": "^1.2.4"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}

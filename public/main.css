@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: center;
+  background: transparent;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+    background-color: orange;
+}
+h1 {
+  font-size: 2em;
+  align-items: center;
+}
+.alphabet {
+  border-bottom: 1px solid;
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  font-size: 3em;
+  background-color: white;
+}
+
+input {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+input[type=submit] {
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  color: white;
+  background-color: gray;
+}
+
+#letter-wrapper {
+  display: flex;
+  flex-flow: row, nowrap;
+  padding: 10px;
+}
+
+
+
+#guess-left {
+  font-size: 1em;
+}
+
+div.container {
+  display: block;
+  margin: auto;
+  margin-top: 20%;
+  width: 800px;
+  padding: 4px;
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+
+div.error {
+  font-family: sans-serif;
+  background-color: red;
+  color: white;
+  margin: auto;
+  padding: 1.5px;
+}
+
+div.todos {
+  font-family: sans-serif;
+  background-color: #fcfcfc;
+  text-decoration-color: black;
+  margin: auto;
+  padding: 1.5px;
+}
+
+ul {
+  list-style: none
+}
+
+#high {
+  background: #B92932;
+  color: white;
+}
+
+#medium {
+  background: #B9B029;
+  color: white;
+}
+
+#low {
+  background: #32B929;
+  color: white;
+}
+
+.letterBox {
+  width: 1vw;
+}

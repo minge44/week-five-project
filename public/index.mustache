@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mystery Words</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="main.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="wrapper">
+      <h1 class="title">Letter Game</h1>
+      <h3 class="description">Press Play Button to start.</h3>
+      
+      <div id="letter-wrapper">
+        {{#words.display}}
+          <div class="alphabet">{{.}}</div>
+        {{/words.display}}
+      </div>
+      <br>
+      <form action="/" method="post">
+        {{#words.playing}}
+          <input type="text" name="guessLetter" placeholder="Enter a letter" maxlength="1" size"1" autocomplete="off">
+        {{/words.playing}}
+        {{#words.lose}}
+          <p id="lose">{{words.status}}</p>
+        {{/words.lose}}
+        <input type="submit" value="{{words.btnText}}">
+        <br>
+        {{#words.playing}}
+          <p id="guesses">Letters guessed: {{words.lettersGuessed}}</p>
+          <br>
+          <p id="message">{{words.message}}</p>
+        {{/words.playing}}
+        <br>
+        {{^words.lose}}
+          <p id="guess-left">You have {{words.guessesLeft}} guesses left.</p>
+        {{/words.lose}}
+        {{#words.lose}}
+          <p id="guess-out">No more guesses available.</p>
+        {{/words.lose}}
+      </form>
+    </div>
+  </body>
+</html>
